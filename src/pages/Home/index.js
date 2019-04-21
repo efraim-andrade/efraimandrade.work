@@ -7,7 +7,9 @@ import { Container } from './styles';
 function Home() {
   return (
     <Container>
-      <Window />
+      <section>
+        <Window />
+      </section>
     </Container>
   );
 }

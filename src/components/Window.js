@@ -141,8 +141,10 @@ const blinking = keyframes`
 `;
 
 const Container = styled.div`
-  width: 680px;
+  width: 100%;
+  max-width: 680px;
   padding: 15px;
+  margin: 0 auto;
   border-radius: 12px;
 
   display: flex;
@@ -153,6 +155,8 @@ const Container = styled.div`
   > header {
     display: flex;
     margin-bottom: 34px;
+
+    @media screen and (max-width: 1024px) { margin-bottom: 20px; }
 
     > div {
       margin-right: 10px;
@@ -170,6 +174,8 @@ const Container = styled.div`
       margin-bottom: 40px;
       padding: 0 39px;
 
+      @media screen and (max-width: 1024px) { padding: 5px; }
+
       &:last-child { margin: 0; }
     }
   }
@@ -181,6 +187,11 @@ const Dots = styled.div`
   border-radius: 100px;
 
   background: ${props => props.color};
+
+  @media screen and (max-width: 1024px) {
+    width: 12px;
+    height: 12px;
+  }
 `;
 
 const Block = styled.div`
@@ -188,12 +199,18 @@ const Block = styled.div`
   padding-left: ${props => (props.tabs ? '48px' : 0)};
 
   display: block;
+
+  @media screen and (max-width: 1024px) {
+    padding-left: ${props => (props.tabs ? '28px' : 0)};
+  }
 `;
 
 const Code = styled.span`
   font-size: 28px;
   font-family: FiraCode;
   color: ${props => props.color};
+
+  @media screen and (max-width: 1024px) { font-size: 14px; }
 
   > a {
     position: relative;
