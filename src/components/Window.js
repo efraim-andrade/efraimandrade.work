@@ -144,13 +144,14 @@ const Container = styled.div`
   width: 100%;
   max-width: 680px;
   padding: 15px;
-  margin: 0 auto;
   border-radius: 12px;
 
   display: flex;
   flex-direction: column;
 
   background: ${colors.primary};
+
+  @media screen and (max-width: 1500px) { max-width: 520px; }
 
   > header {
     display: flex;
@@ -171,10 +172,15 @@ const Container = styled.div`
     flex-direction: column;
 
     > .component {
-      margin-bottom: 40px;
       padding: 0 39px;
+      margin-bottom: 40px;
 
-      @media screen and (max-width: 1024px) { padding: 5px; }
+      @media screen and (max-width: 1500px) { margin-bottom: 20px; }
+
+      @media screen and (max-width: 1024px) {
+        padding: 5px;
+        margin-bottom: 10px;
+      }
 
       &:last-child { margin: 0; }
     }
@@ -188,6 +194,11 @@ const Dots = styled.div`
 
   background: ${props => props.color};
 
+  @media screen and (max-width: 1500px) {
+    width: 14px;
+    height: 14px;
+  }
+
   @media screen and (max-width: 1024px) {
     width: 12px;
     height: 12px;
@@ -200,6 +211,10 @@ const Block = styled.div`
 
   display: block;
 
+  @media screen and (max-width: 1500px) {
+    padding-left: ${props => (props.tabs ? '38px' : 0)};
+  }
+
   @media screen and (max-width: 1024px) {
     padding-left: ${props => (props.tabs ? '28px' : 0)};
   }
@@ -210,6 +225,8 @@ const Code = styled.span`
   font-family: FiraCode;
   color: ${props => props.color};
 
+  @media screen and (max-width: 1500px) { font-size: 18px; }
+
   @media screen and (max-width: 1024px) { font-size: 14px; }
 
   > a {
@@ -218,7 +235,7 @@ const Code = styled.span`
     &:after {
       position: absolute;
       left: 0;
-      bottom: 5px;
+      bottom: 2px;
 
       width: 0;
       height: 2px;

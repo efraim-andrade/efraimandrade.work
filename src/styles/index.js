@@ -19,7 +19,7 @@ const GlobalStyle = createGlobalStyle`
     -webkit-font-smoothing: antialiased !important;
     background: ${colors.background};
     color: #FFF;
-    font-family: 'Montserrat', sans-serif;
+    font-family: FiraCode, sans-serif;
   }
 
   a {
