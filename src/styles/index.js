@@ -7,7 +7,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: 0
+    outline: 0,
   }
 
   html, body, #root {
@@ -20,6 +20,11 @@ const GlobalStyle = createGlobalStyle`
     background: ${colors.background};
     color: #FFF;
     font-family: 'Montserrat', sans-serif;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
   }
 `;
 

@@ -1,11 +1,13 @@
 import React from 'react';
 
+import { Window } from '../../components';
+
 import { Container } from './styles';
 
 function Home() {
   return (
     <Container>
-      <h1>teste</h1>
+      <Window />
     </Container>
   );
 }
