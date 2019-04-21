@@ -13,14 +13,18 @@ export const Container = styled.div`
 
   @media screen and (max-width: 1500px) { padding: 0 3%; }
 
-  @media screen and (max-width: 1024px) { padding: 0 20px; }
+  @media screen and (max-width: 1024px) {
+    padding: 0 20px;
+
+    justify-content: center;
+  }
 
   > header {
     margin: 40px 0 60px;
 
     @media screen and (max-width: 1500px) { margin: 20px 0 40px; }
 
-    @media screen and (max-width: 1024px) { margin-bottom: 20px; }
+    @media screen and (max-width: 1024px) { margin: 0 0 20px; }
   }
 
   > section {
