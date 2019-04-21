@@ -1,12 +1,16 @@
 import React from 'react';
 
-import { Window, CoverLetter } from '../../components';
+import { Window, CoverLetter, Header } from '../../components';
 
 import { Container } from './styles';
 
 function Home() {
   return (
     <Container>
+      <header>
+        <Header />
+      </header>
+
       <section>
         <Window />
 

@@ -16,7 +16,7 @@ function Window() {
         <div className="component">
           <Block>
             <Code>{'<'}</Code>
-            <Code color={colors.component}>Developer</Code>
+            <Code color={colors.component} italic>Developer</Code>
           </Block>
 
           <Block tabs>
@@ -63,7 +63,7 @@ function Window() {
         <div className="component">
           <Block>
             <Code>{'<'}</Code>
-            <Code color={colors.component}>Contact</Code>
+            <Code color={colors.component} italic>Contact</Code>
           </Block>
 
           <Block tabs>
@@ -142,8 +142,8 @@ const blinking = keyframes`
 
 const Container = styled.div`
   width: 100%;
-  max-width: 680px;
   padding: 15px;
+  max-width: 680px;
   border-radius: 12px;
 
   display: flex;
@@ -182,6 +182,11 @@ const Container = styled.div`
         margin-bottom: 10px;
       }
 
+      @media screen and (max-width: 320px) {
+        padding: 5px;
+        margin-bottom: 0;
+      }
+
       &:last-child { margin: 0; }
     }
   }
@@ -203,6 +208,11 @@ const Dots = styled.div`
     width: 12px;
     height: 12px;
   }
+
+  @media screen and (max-width: 320px) {
+    width: 10px;
+    height: 10px;
+  }
 `;
 
 const Block = styled.div`
@@ -218,16 +228,24 @@ const Block = styled.div`
   @media screen and (max-width: 1024px) {
     padding-left: ${props => (props.tabs ? '28px' : 0)};
   }
+
+  @media screen and (max-width: 320px) {
+    margin-bottom: 0;
+    padding-left: ${props => (props.tabs ? '16px' : 0)};
+  }
 `;
 
 const Code = styled.span`
-  font-size: 28px;
+  font-size: 24px;
   font-family: FiraCode;
+  font-style: ${props => (props.italic ? 'italic' : 'normal')};
   color: ${props => props.color};
 
   @media screen and (max-width: 1500px) { font-size: 18px; }
 
   @media screen and (max-width: 1024px) { font-size: 14px; }
+
+  @media screen and (max-width: 320px) { font-size: 12px; }
 
   > a {
     position: relative;

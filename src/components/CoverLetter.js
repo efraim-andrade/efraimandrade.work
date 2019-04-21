@@ -48,7 +48,7 @@ const Container = styled.div`
 
     color: #E5E5E5;
     line-height: 1.6;
-    font-size: 1.25rem;
+    font-size: 1.2rem;
 
     @media screen and (max-width: 1500px) { font-size: 1rem; }
 
