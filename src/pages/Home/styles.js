@@ -14,7 +14,7 @@ export const Container = styled.div`
   @media screen and (max-width: 1500px) { padding: 0 3%; }
 
   @media screen and (max-width: 1024px) {
-    padding: 0 20px;
+    padding: 20px;
 
     justify-content: center;
   }
