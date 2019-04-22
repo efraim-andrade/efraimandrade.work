@@ -1,5 +1,9 @@
 self.__precacheManifest = [
   {
+    "revision": "fb487c49b8612427f8fea10022cc8bfb",
+    "url": "/static/media/efraim-illustration.fb487c49.jpeg"
+  },
+  {
     "revision": "8c21e1187f634b3575fbc007c2ce4d7f",
     "url": "/static/media/avatar.8c21e118.jpg"
   },
@@ -12,19 +16,19 @@ self.__precacheManifest = [
     "url": "/static/js/runtime~main.a8a9905a.js"
   },
   {
-    "revision": "a73361491aa216166b3b",
-    "url": "/static/js/main.2c4351e6.chunk.js"
+    "revision": "59c2c13e1e71450f9b0e",
+    "url": "/static/js/main.0c171f69.chunk.js"
   },
   {
     "revision": "377b6515de003c393feb",
     "url": "/static/js/2.6d5948e5.chunk.js"
   },
   {
-    "revision": "a73361491aa216166b3b",
+    "revision": "59c2c13e1e71450f9b0e",
     "url": "/static/css/main.3f9a0c3b.chunk.css"
   },
   {
-    "revision": "2a368930a16a11020e01205a706a6129",
+    "revision": "8b90073bd8e8c4f745e82796915189ca",
     "url": "/index.html"
   }
 ];
