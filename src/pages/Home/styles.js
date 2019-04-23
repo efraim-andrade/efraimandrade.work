@@ -11,7 +11,7 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: flex-start;
 
-  @media screen and (max-width: 1500px) { padding: 0 3%; }
+  @media screen and (max-width: 1500px) { padding: 20px 3%; }
 
   @media screen and (max-width: 1024px) {
     padding: 20px;
@@ -22,7 +22,7 @@ export const Container = styled.div`
   > header {
     margin: 40px 0 60px;
 
-    @media screen and (max-width: 1500px) { margin: 20px 0 40px; }
+    @media screen and (max-width: 1500px) { margin: 20px 0 30px; }
 
     @media screen and (max-width: 1024px) { margin: 0 0 20px; }
   }

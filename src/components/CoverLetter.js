@@ -50,7 +50,7 @@ const Container = styled.div`
     line-height: 1.6;
     font-size: 1.2rem;
 
-    @media screen and (max-width: 1500px) { font-size: 1rem; }
+    @media screen and (max-width: 1500px) { font-size: .9rem; }
 
     &:last-child { margin-bottom: 0; }
 

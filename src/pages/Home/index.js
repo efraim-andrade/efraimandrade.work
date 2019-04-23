@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { Window, CoverLetter, Header } from '../../components';
+import Illustration from '../../assets/img/efraim-illustration.jpeg';
 
 import { Container } from './styles';
 

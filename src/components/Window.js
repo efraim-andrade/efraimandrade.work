@@ -157,6 +157,8 @@ const Container = styled.div`
     display: flex;
     margin-bottom: 34px;
 
+    @media screen and (max-width: 1500px) { margin-bottom: 24px; }
+
     @media screen and (max-width: 1024px) { margin-bottom: 20px; }
 
     > div {
@@ -241,11 +243,11 @@ const Code = styled.span`
   font-style: ${props => (props.italic ? 'italic' : 'normal')};
   color: ${props => props.color};
 
-  @media screen and (max-width: 1500px) { font-size: 18px; }
+  @media screen and (max-width: 1500px) { font-size: 1rem; }
 
-  @media screen and (max-width: 1024px) { font-size: 14px; }
+  @media screen and (max-width: 1024px) { font-size: .875rem; }
 
-  @media screen and (max-width: 320px) { font-size: 12px; }
+  @media screen and (max-width: 320px) { font-size: .75rem; }
 
   > a {
     position: relative;
