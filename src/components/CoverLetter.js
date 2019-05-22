@@ -41,6 +41,8 @@ const Container = styled.div`
   width: 100%;
   max-width: 700px;
 
+  justify-self: self-end;
+
   @media screen and (max-width: 1024px) { display: none; }
 
   > .block {

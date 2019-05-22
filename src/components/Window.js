@@ -143,15 +143,13 @@ const blinking = keyframes`
 const Container = styled.div`
   width: 100%;
   padding: 15px;
-  max-width: 680px;
+  max-width: 700px;
   border-radius: 12px;
 
   display: flex;
   flex-direction: column;
 
   background: ${colors.primary};
-
-  @media screen and (max-width: 1500px) { max-width: 520px; }
 
   > header {
     display: flex;
