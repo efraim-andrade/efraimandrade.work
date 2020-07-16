@@ -11,7 +11,7 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: flex-start;
 
-  @media screen and (max-width: 1500px) { padding: 20px 3%; }
+  @media screen and (max-width: 1650px) { padding: 20px 3%; }
 
   @media screen and (max-width: 1024px) {
     padding: 20px;
@@ -30,9 +30,16 @@ export const Container = styled.div`
   > section {
     width: 100%;
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    grid-gap: 20px;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+
+    @media screen and (max-width: 1024px) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
 
     @media screen and (max-width: 1024px) { flex-direction: column; }
 
