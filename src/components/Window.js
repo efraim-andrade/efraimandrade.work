@@ -95,7 +95,7 @@ function Window() {
 
             <Code color={colors.white}>
               <a
-                href="https://www.linkedin.com/in/efraim-andrade-morais-junior-517b0a149/"
+                href="https://www.linkedin.com/in/efraim-andrade-517b0a149/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
